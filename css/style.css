@@ -1,0 +1,273 @@
+body {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1c1b1b;
+  background: #efefef;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* хедер статичний чьорний */
+
+.announcementBar {
+  position: relative;
+  text-align: center;
+
+  z-index: 1;
+  padding: 12px 15px;
+  background-color: black;
+  opacity: 1;
+}
+.text__header {
+  font-size: 12px;
+}
+
+/* другачастина хедера */
+
+.container {
+}
+
+.select__list {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  width: 296px;
+}
+.header__logo {
+  display: flex;
+}
+.header__nav-wrap {
+  padding: 18px 50px 24px;
+
+  color: #1c1b1b;
+  opacity: 1;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav__list {
+  display: flex;
+}
+.header__nav__item {
+}
+
+.nav__category__list {
+  display: flex;
+  justify-content: center;
+}
+.header__nav__item {
+  margin: 6px 14px;
+}
+.header__nav__link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.nav__category__link {
+  font-size: 12px;
+}
+.nav__category__item {
+  margin: 6px 12px;
+}
+.heading {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.header__nav-wrap:focus {
+  background-color: #ffffff;
+}
+.hero__img {
+  /* position: absolute; */
+  content: "";
+  width: 100%;
+  height: 1640px;
+  left: 0;
+  top: 20px;
+  z-index: -1;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(4, 4, 4, 0.65)),
+    to(rgba(54, 54, 54, 0.2))
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(184, 50, 50, 0.65),
+    rgba(223, 12, 12, 0.2)
+  );
+}
+
+.collection {
+  padding: 80px 60px;
+}
+.collection__laibl {
+  font-size: 12px;
+  color: #1c1b1b;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.collection__title {
+  font-size: 20px;
+  color: #1c1b1b;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.collection__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+}
+.collection__item {
+  max-width: 300px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+.collection__img {
+  width: 100%;
+}
+.collection__text {
+  margin-top: 20px;
+}
+.name__title {
+  color: #1c1b1b;
+  font-size: 13px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.price {
+  font-size: 13px;
+  color: #6a6a6a;
+  text-align: center;
+}
+.collection__btn {
+  width: 246px;
+  height: 46px;
+  border: 1px solid black;
+  background-color: #1c1b1b;
+
+  padding: 14px 28px;
+  line-height: normal;
+  color: #efefef;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.payment__laibl {
+  color: #1c1b1b;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.payment__title {
+  color: #1c1b1b;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.payment__leibl {
+  font-size: 12px;
+  color: #1c1b1b;
+  margin-bottom: 20px;
+}
+.payment__link {
+  font-size: 18px;
+  color: #1c1b1b;
+  margin-bottom: 15px;
+}
+.payment__price {
+  font-size: 16px;
+  color: #6a6a6a;
+  margin-bottom: 24px;
+}
+.text__conteiner {
+  max-width: 400px;
+  padding-top: 24px;
+  border-top: 1px solid #cfcfcf;
+  text-align: left;
+}
+
+.payment__info {
+  display: flex;
+  justify-content: center;
+}
+.payment__info__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.text__conteiner {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1c1b1b;
+  background: #efefef;
+  line-height: 1.65;
+  font-size: 15px;
+}
+.payment__text_leidl {
+  margin-bottom: 20px;
+}
+
+.payment__text_list li {
+  list-style-type: disc;
+  /* Убираем маркеры */
+}
+.payment__text_list {
+  margin-bottom: 10px;
+}
+strong {
+  font-weight: 700;
+}
