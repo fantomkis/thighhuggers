@@ -357,6 +357,59 @@ img {
 strong {
   font-weight: 700;
 }
+/* sale */
+.sale {
+  padding: 30px;
+}
+
+.sale__card {
+  width: 500px;
+  background-image: url("../img/3.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  background-image: linear-gradient(
+    to top,
+    rgba(4, 4, 4, 0.65),
+    rgba(54, 54, 54, 0.2)
+  );
+  position: relative;
+}
+.f {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 113px;
+  left: 50px;
+  top: 430px;
+}
+.sale__title {
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+.sale__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 207px;
+  height: 44px;
+  color: #363636;
+
+  background-color: #ffffff;
+  font-size: 14px;
+  z-index: 3;
+}
+.sale__btn:hover,
+.sale__btn:focus {
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+.sale__img {
+  z-index: -1;
+}
 
 /* footer */
 .footer {
