@@ -67,20 +67,36 @@ img {
 }
 
 .select__list {
+  display: none;
   background-color: transparent;
   border: none;
   font-size: 10px;
 }
+@media (min-width: 999px) {
+  .select__list {
+    display: block;
+    margin-right: auto;
+  }
+}
 .header__logo {
   display: flex;
-  margin-right: 38px;
+  /* margin-right: 38px; */
+}
+@media (min-width: 999px) {
+  .header__logo {
+    margin-right: -190px;
+  }
 }
 .header__nav-wrap {
-  display: none;
-  padding: 18px 30px;
+  padding: 18px 10px;
 
   color: #1c1b1b;
   opacity: 1;
+}
+@media (min-width: 400px) {
+  .header__nav-wrap {
+    padding: 18px 30px;
+  }
 }
 @media (min-width: 999px) {
   .header__nav-wrap {
@@ -90,14 +106,24 @@ img {
 
 .header__wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  /* margin-bottom: 10px; */
+}
+@media (min-width: 999px) {
+  .header__wrap {
+    margin-bottom: 10px;
+  }
 }
 .header__nav {
-  display: flex;
+  display: none;
   align-items: center;
   margin-left: auto;
+}
+@media (min-width: 999px) {
+  .header__nav {
+    display: block;
+    margin-left: auto;
+  }
 }
 .header__nav__list {
   display: flex;
@@ -106,9 +132,16 @@ img {
 }
 
 .nav__category__list {
-  display: flex;
+  display: none;
   justify-content: center;
 }
+@media (min-width: 999px) {
+  .nav__category__list {
+    display: flex;
+    margin: auto;
+  }
+}
+
 .header__nav__item {
   margin: 6px 14px;
 }
@@ -138,6 +171,37 @@ img {
 .header__nav-wrap:focus {
   background-color: #ffffff;
 }
+.btn__open {
+  margin-right: auto;
+  border: none;
+  padding: 10px;
+}
+@media (min-width: 999px) {
+  .btn__open {
+    display: none;
+  }
+}
+.header__search {
+  margin-left: auto;
+}
+@media (min-width: 999px) {
+  .header__search {
+    display: none;
+  }
+}
+.header__search-btn {
+  border: none;
+}
+
+@media (min-width: 400px) {
+  .header__search-btn:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.svg__header {
+  fill: #fff;
+}
+
 .hero__img {
   /* position: absolute; */
   content: "";
@@ -937,19 +1001,21 @@ svg {
   padding-left: 18px;
   padding-right: 24px;
 }
-.menu__grad {
+.mabil-menu-nav::before {
   position: absolute;
   content: "";
   width: 100%;
   pointer-events: none;
   z-index: 1;
   height: 25px;
+  background-color: #e9e9e9;
   background-image: linear-gradient(
     #1c1b1b,
     rgba(28, 27, 27, 0.6) 40%,
     rgba(28, 27, 27, 0)
   );
 }
+
 .mabil-menu__link {
   font-family: Montserrat, sans-serif;
   font-weight: 500;

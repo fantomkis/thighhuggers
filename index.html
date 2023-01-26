@@ -27,46 +27,44 @@
         </div>
         <div class="header__nav-wrap container">
             <div class="header__wrap">
+                <!-- <button class="menu-btn" aria-label="кнопка відкритя меню" type="button" aria-expanded="false"
+                    data-menu-button>
+                    <span class="hidden-tablet-and-up"><svg class="Icon Icon--nav" role="presentation"
+                            viewBox="0 0 20 14">
+                            <path d="M0 14v-1h20v1H0zm0-7.5h20v1H0v-1zM0 0h20v1H0V0z" fill="currentColor"></path>
+                        </svg></span>
+
+
+
+                </button> -->
+
+                <button class="btn__open" type="button"> <svg width="24" height="17">
+                        <use href="./img/sprit.svg#icon-menu_24px"></use>
+                    </svg></button>
+                <select class="select__list heading" name="select" id="">
+                    <option value="value1" selected>usd</option>
+                    <option value="value2">cad</option>
+                    <option value="value3">eur</option>
+                    <option value="value4">gbp</option>
+                </select>
+
                 <img src="./img/Thigh_Huggers_logo_paint_1800x750_160x@2x.avif" class="header__logo" width="160"
                     alt="logo header" />
-                <nav class="nav__category">
-                    <ul class="nav__category__list">
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">HOME</a>
-                        </li>
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">THIGH HUGGERS</a>
-                        </li>
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">THIGH CLUB SHIRTS</a>
-                        </li>
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">HOODIES</a>
-                        </li>
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">SPORTSWEAR</a>
-                        </li>
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">SWAG</a>
-                        </li>
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">CLEARANCE</a>
-                        </li>
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">AMBASSADORS</a>
-                        </li>
-                        <li class="nav__category__item">
-                            <a class="nav__category__link heading" href="#">SIZING</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header__search"> <button class="header__search-btn" type="button"> <svg class="svg__header"
+                            fill="#ffff;" class="btn__menu" width="23" height="20">
+                            <use href="./img/sprit.svg#icon-search"></use>
+                        </svg></button>
+                    <button class="header__search-btn" type="button"> <svg class="svg__header" width="23" height="20">
+                            <use href="./img/sprit.svg#icon-shopping-cart-svgrepo-com"></use>
+                        </svg></button></div>
+
                 <nav class="header__nav">
-                    <select class="select__list heading" name="select" id="">
+                    <!-- <select class="select__list heading" name="select" id="">
                         <option value="value1" selected>usd</option>
                         <option value="value2">cad</option>
                         <option value="value3">eur</option>
                         <option value="value4">gbp</option>
-                    </select>
+                    </select> -->
                     <ul class="header__nav__list">
                         <li class="header__nav__item">
                             <a class="header__nav__link heading" href="#">ACCOUNT</a>
@@ -80,20 +78,41 @@
                     </ul>
                 </nav>
             </div>
+            <nav class="nav__category">
+                <ul class="nav__category__list">
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">HOME</a>
+                    </li>
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">THIGH HUGGERS</a>
+                    </li>
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">THIGH CLUB SHIRTS</a>
+                    </li>
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">HOODIES</a>
+                    </li>
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">SPORTSWEAR</a>
+                    </li>
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">SWAG</a>
+                    </li>
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">CLEARANCE</a>
+                    </li>
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">AMBASSADORS</a>
+                    </li>
+                    <li class="nav__category__item">
+                        <a class="nav__category__link heading" href="#">SIZING</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
         <!-- mobil -->
-        <button class="menu-btn" aria-label="кнопка відкритя меню" type="button" aria-expanded="false" data-menu-button>
-            <span class="hidden-tablet-and-up"><svg class="Icon Icon--nav" role="presentation" viewBox="0 0 20 14">
-                    <path d="M0 14v-1h20v1H0zm0-7.5h20v1H0v-1zM0 0h20v1H0V0z" fill="currentColor"></path>
-                </svg></span>
-
-
-            <svg width="40" height="40">
-                <use class="icon-open" href="./images/sprait.svg#icon-burger"></use>
-                <use class="icon-close" href="./images/sprait.svg#icon-clouz-menu"></use>
-            </svg>
-        </button>
+        <!-- 
         <div class="mobil-menu" data-menu>
 
 
@@ -106,9 +125,10 @@
                             role="presentation" viewBox="0 0 16 14">
                             <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
                         </svg></button></div>
+
                 <div class="mabil-menu-nav ">
 
-                    <div class="menu__grad"></div>
+
                     <ul class="mabil-menu-list" style="height: 100%; overflow: visible">
 
                         <li class="mabil-menu__item">
@@ -173,14 +193,14 @@
 
 
 
-                <!-- <ul class="mobil-soclists">
+                < <ul class="mobil-soclists">
                     <li class="mobil-soclists-item"><a class="mobil-soclists-linc" href="">Instagram</a></li>
                     <li class="mobil-soclists-item"><a class="mobil-soclists-linc" href="">Twitter</a></li>
                     <li class="mobil-soclists-item"><a class="mobil-soclists-linc" href="">Facebook</a></li>
                     <li class="mobil-soclists-item"><a class="mobil-soclists-linc" href="">LinkedIn</a></li>
-                </ul> -->
+                </ul> 
             </div>
-        </div>
+        </div> -->
 
 
         <div class="hero">
