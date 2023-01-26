@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Nunito+Sans&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,8 +27,6 @@
         </div>
         <div class="header__nav-wrap container">
             <div class="header__wrap">
-
-
                 <img src="./img/Thigh_Huggers_logo_paint_1800x750_160x@2x.avif" class="header__logo" width="160"
                     alt="logo header" />
                 <nav class="nav__category">
@@ -82,11 +80,112 @@
                     </ul>
                 </nav>
             </div>
-
-
         </div>
-        <div class="hero"><img class="hero__img" src="./img/12.webp" alt="" /></div>
 
+        <!-- mobil -->
+        <button class="menu-btn" aria-label="кнопка відкритя меню" type="button" aria-expanded="false" data-menu-button>
+            <span class="hidden-tablet-and-up"><svg class="Icon Icon--nav" role="presentation" viewBox="0 0 20 14">
+                    <path d="M0 14v-1h20v1H0zm0-7.5h20v1H0v-1zM0 0h20v1H0V0z" fill="currentColor"></path>
+                </svg></span>
+
+
+            <svg width="40" height="40">
+                <use class="icon-open" href="./images/sprait.svg#icon-burger"></use>
+                <use class="icon-close" href="./images/sprait.svg#icon-clouz-menu"></use>
+            </svg>
+        </button>
+        <div class="mobil-menu" data-menu>
+
+
+
+            <div class="mobil__modal">
+
+
+                <div class="close"><button class="Drawer__Close Icon-Wrapper--clickable" data-action="close-drawer"
+                        data-drawer-id="sidebar-menu" aria-label="Close navigation"><svg class="Icon Icon--close"
+                            role="presentation" viewBox="0 0 16 14">
+                            <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                        </svg></button></div>
+                <div class="mabil-menu-nav ">
+
+                    <div class="menu__grad"></div>
+                    <ul class="mabil-menu-list" style="height: 100%; overflow: visible">
+
+                        <li class="mabil-menu__item">
+                            <a href="/" class="mabil-menu__link Link Link--primary">Home</a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/collections/thigh_huggers" class="mabil-menu__link Link Link--primary">Thigh
+                                Huggers
+                            </a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/collections/thigh-club-shirts" class="mabil-menu__link Link Link--primary">Thigh
+                                Club
+                                Shirts</a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/collections/hoodies" class="mabil-menu__link Link Link--primary">Hoodies </a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/collections/sportswear" class="mabil-menu__link Link Link--primary">Sportswear
+                            </a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/collections/swag" class="mabil-menu__link Link Link--primary">Swag</a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/collections/clearance" class="mabil-menu__link Link Link--primary">Clearance</a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/pages/become-an-ambassador"
+                                class="mabil-menu__link Link Link--primary">Ambassadors</a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/pages/sizing-charts" class="mabil-menu__link Link Link--primary">Sizing</a>
+                        </li>
+                        <li class="mabil-menu__item">
+                            <a href="/account/login" class="mabil-menu__link Link Link--primary">Account</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="menu__social">
+                    <select class="menu__selekt" name="select" id="">
+                        <option value="value1" selected>usd</option>
+                        <option value="value2">cad</option>
+                        <option value="value3">eur</option>
+                        <option value="value4">gbp</option>
+                    </select>
+                    <ul class="menu__social-list">
+                        <li class="menu__social-link">
+                            <a href="" class="menu__social-lin"><svg width="15" height="20">
+                                    <use href="./img/sprit.svg#icon-facebook "></use>
+                                </svg></a>
+                        </li>
+                        <li class="menu__social-link">
+                            <a href="" class="menu__social-lin"><svg width="15" height="20">
+                                    <use href="./img/sprit.svg#icon-instagram"></use>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <!-- <ul class="mobil-soclists">
+                    <li class="mobil-soclists-item"><a class="mobil-soclists-linc" href="">Instagram</a></li>
+                    <li class="mobil-soclists-item"><a class="mobil-soclists-linc" href="">Twitter</a></li>
+                    <li class="mobil-soclists-item"><a class="mobil-soclists-linc" href="">Facebook</a></li>
+                    <li class="mobil-soclists-item"><a class="mobil-soclists-linc" href="">LinkedIn</a></li>
+                </ul> -->
+            </div>
+        </div>
+
+
+        <div class="hero">
+            <img class="hero__img" src="./img/12.webp" alt="" />
+        </div>
     </header>
     <main>
         <section class="collection container">
@@ -96,93 +195,92 @@
             <ul class="collection__list">
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
-
             </ul>
             <a href="#" class="collection__btn" type="button">VIEW ALL PRODUCTS</a>
         </section>
@@ -193,93 +291,92 @@
             <ul class="collection__list">
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
                 <li class="collection__item">
                     <a href="" class="collection__link">
-
                         <img class="collection__img" src="./img/WaterMark1673976070092_1000x.webp" alt="short" />
                         <div class="collection__text">
-                            <h3 class="name__title heading">PUMPKIN BUTT THIGH HUGGERS 2.0S</h3>
+                            <h3 class="name__title heading">
+                                PUMPKIN BUTT THIGH HUGGERS 2.0S
+                            </h3>
                             <p class="price heading">£16</p>
                         </div>
-
                     </a>
                 </li>
-
             </ul>
             <a class="collection__btn" href="#">VIEW ALL PRODUCTS</a>
         </section>
@@ -287,14 +384,13 @@
             <div class="video__container">
                 <h3 class="video__leibl heading">THIGH HUGGERS</h3>
                 <h2 class="video__titel heading">FREE THOSE THIGHS</h2>
-                <button type="button" class="video__btn"> <svg class="Icon Icon--play" role="presentation" width="80"
-                        height="80" viewBox="0 0 24 24">
+                <button type="button" class="video__btn">
+                    <svg class="Icon Icon--play" role="presentation" width="80" height="80" viewBox="0 0 24 24">
                         <path
                             d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm-2 15.5V9l4.5 3.25L10 15.5z"
                             fill=" #f26262"></path>
-                    </svg></button>
-
-
+                    </svg>
+                </button>
             </div>
             <!-- <img class="video__img" src="./img/2.webp" alt=""> -->
         </section>
@@ -302,75 +398,68 @@
             <h3 class="payment__laibl heading">QUAD SQUAD</h3>
             <h2 class="payment__title heading">JOIN OR HAVE LITTLE LEGS</h2>
             <div class="payment__info">
-                <img src="./img/1.webp" class="payment__img" alt="man">
+                <img src="./img/1.webp" class="payment__img" alt="man" />
                 <div class="payment__info__text">
-                    <h2 class="payment__leibl heading">THIGHHUGGERS.COM
-                    </h2>
+                    <h2 class="payment__leibl heading">THIGHHUGGERS.COM</h2>
                     <a href="#" class="payment__link heading">MEN'S QUAD SQUAD T-SHIRT</a>
                     <span class="payment__price heading">£24</span>
                     <div class="text__conteiner">
-                        <p class="payment__text_leidl">This t-shirt is comfortable, soft, lightweight, and form-fitting.
-                            It's an
-                            ideal staple piece
-                            for any wardrobe!
+                        <p class="payment__text_leidl">
+                            This t-shirt is comfortable, soft, lightweight, and
+                            form-fitting. It's an ideal staple piece for any wardrobe!
                         </p>
                         <ul class="payment__text_list">
-                            <li> 100% combed ring-spun cotton</li>
+                            <li>100% combed ring-spun cotton</li>
                             <li>Heather Grey is 90% cotton, 10% polyester</li>
                             <li>Fabric weight: 4.3 oz/yd² (145.8 g/m²)</li>
                             <li>Pre-shrunk</li>
                         </ul>
                         <strong>Size guide</strong>
-
                     </div>
-
                 </div>
             </div>
         </section>
         <section class="sale">
             <ul class="sale_list">
                 <li class="sale__item">
-
-
-                    <img class="sale__img" src="./img/3.webp" alt="">
+                    <img class="sale__img" src="./img/3.webp" alt="" />
                     <div class="f">
                         <div class="text_wrap">
                             <h2 class="sale__title heading">CLEARANCE</h2>
                             <a href="" class="sale__btn heading">VIEW PRODUCTS</a>
                         </div>
-
                     </div>
-
-
                 </li>
-
-
-
             </ul>
-
-
         </section>
 
-        <footer class="footer ">
+        <footer class="footer">
             <div class="footer__wrap">
                 <div class="footer__text">
                     <h2 class="footer__text__title heading">WHY THIGH HUGGERS</h2>
-                    <p class="footer__text__leibl">We enjoy the finer thighs in life. At the Thigh High Club we believe
-                        that hard work and dedication should be shown off. We are taking Ranger Panties to the next
-                        level. Military driven, fitness tested, and American approved. Email us for Military, and First
-                        Responder discounts. </p>
-                    <p class="footer__text__info">Email support@thighhuggers.com with a picture of your Military ID,
-                        Fire, EMS or Police ID for Verification.</p>
-                    <p class="footer__text__accent">Don't skip leg day. </p>
+                    <p class="footer__text__leibl">
+                        We enjoy the finer thighs in life. At the Thigh High Club we
+                        believe that hard work and dedication should be shown off. We are
+                        taking Ranger Panties to the next level. Military driven, fitness
+                        tested, and American approved. Email us for Military, and First
+                        Responder discounts.
+                    </p>
+                    <p class="footer__text__info">
+                        Email support@thighhuggers.com with a picture of your Military ID,
+                        Fire, EMS or Police ID for Verification.
+                    </p>
+                    <p class="footer__text__accent">Don't skip leg day.</p>
                     <ul class="footer__social-list">
-                        <li class="footer__social-link"><a href="" class="footer__social-link"><svg width="15"
-                                    height="15">
+                        <li class="footer__social-link">
+                            <a href="" class="footer__social-link"><svg width="15" height="15">
                                     <use href="./img/sprit.svg#icon-facebook "></use>
-                                </svg></a></li>
-                        <li class="footer__social-link"><a href="" class="footer__social-link"><svg width="15"
-                                    height="15">
+                                </svg></a>
+                        </li>
+                        <li class="footer__social-link">
+                            <a href="" class="footer__social-link"><svg width="15" height="15">
                                     <use href="./img/sprit.svg#icon-instagram"></use>
-                                </svg></a></li>
+                                </svg></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__search">
@@ -379,69 +468,72 @@
                 </div>
                 <div class="footer__form">
                     <h2 class="footer__form__titel heading">JOIN THE CLUB</h2>
-                    <p class="footer__form__text">Subscribe to receive updates, access to exclusive club only deals, and
-                        more.
+                    <p class="footer__form__text">
+                        Subscribe to receive updates, access to exclusive club only deals,
+                        and more.
                     </p>
                     <ul class="footer__form__list">
-                        <li class="footer__form__item"><a href="" class="footer__form__link ">Terms and
-                                Conditions</a>
+                        <li class="footer__form__item">
+                            <a href="" class="footer__form__link">Terms and Conditions</a>
                         </li>
-                        <li class="footer__form__item"><a href="" class="footer__form__link">Privacy Policy</a></li>
-                        <li class="footer__form__item"><a href="" class="footer__form__link">Returns and Refunds</a>
+                        <li class="footer__form__item">
+                            <a href="" class="footer__form__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__form__item">
+                            <a href="" class="footer__form__link">Returns and Refunds</a>
                         </li>
                         <form class="footer__form_form" action="">
-                            <input class="footer__form__input" placeholder="Enter your email address" type="text">
-                            <button class="footer__form__btn" type="submit">SUBSCRIBE</button>
+                            <input class="footer__form__input" placeholder="Enter your email address" type="text" />
+                            <button class="footer__form__btn" type="submit">
+                                SUBSCRIBE
+                            </button>
                         </form>
                     </ul>
-
                 </div>
             </div>
             <div class="footer__pay">
                 <div class="footer__pay__info">
                     <a href="" class="footer__pay__link heading">© THIGHHUGGERS</a>
-                    <p class="footer__pay__text">Theme by Maestrooo | Powered by Shopify</p>
-
-
+                    <p class="footer__pay__text">
+                        Theme by Maestrooo | Powered by Shopify
+                    </p>
                 </div>
                 <ul class="footer__link__list">
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
-                    <li class="footer__link__item"><img class="footer__link" alt="logo" width="38" height="24"
-                            src="./img/apple-pay-logo.jpg">
+                    <li class="footer__link__item">
+                        <img class="footer__link" alt="logo" width="38" height="24" src="./img/apple-pay-logo.jpg" />
                     </li>
                 </ul>
             </div>
-
-
         </footer>
     </main>
 </body>
