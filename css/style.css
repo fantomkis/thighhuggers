@@ -681,7 +681,8 @@ svg {
 }
 .footer__search {
   margin-bottom: 50px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 @media (min-width: 999px) {
   .footer__search {
